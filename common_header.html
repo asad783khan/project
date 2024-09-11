@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Common Header and Footer</title>
+    <link rel="stylesheet" href="common_styles.css">
+    <script src="common_scripts.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="logo.png" alt="DLMS Logo"></a>
+            </div>
+            <nav>
+                <ul id="nav-menu">
+                    <!-- Menu items will be injected based on user role -->
+                </ul>
+            </nav>
+            <div class="profile">
+                <button id="profile-btn">Profile</button>
+                <div id="profile-dropdown" class="dropdown-content">
+                    <a href="profile.html">My Profile</a>
+                    <a href="logout.php">Logout</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="contact-info">
+                <p>Contact us at: <a href="mailto:contact@university.edu">contact@university.edu</a></p>
+                <p>Phone: +[Country Code] [Phone Number]</p>
+            </div>
+            <div class="social-media">
+                <a href="https://facebook.com/department" target="_blank">Facebook</a>
+                <a href="https://twitter.com/department" target="_blank">Twitter</a>
+                <a href="https://linkedin.com/company/department" target="_blank">LinkedIn</a>
+            </div>
+            <div class="quick-links">
+                <a href="help.html">Help</a>
+                <a href="terms.html">Terms of Service</a>
+                <a href="privacy.html">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

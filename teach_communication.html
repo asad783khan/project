@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Communication | Teachers Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="teachers_portal.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="manage_courses.html">Manage Courses</a></li>
+                <li><a href="attendance.html">Attendance</a></li>
+                <li><a href="communication.html">Communication</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="communication">
+            <h1>Communication</h1>
+            <form id="send-message-form">
+                <h2>Send Message</h2>
+                <label for="recipient">Recipient:</label>
+                <input type="text" id="recipient" name="recipient" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <div id="inbox">
+                <h2>Inbox</h2>
+                <ul id="message-list">
+                    <!-- Messages will be dynamically added here -->
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Department Learning Management System. All rights reserved.</p>
+    </footer>
+</body>
+</html>

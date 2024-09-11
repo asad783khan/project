@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Courses | Teachers Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="teachers_portal.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="manage_courses.html">Manage Courses</a></li>
+                <li><a href="attendance.html">Attendance</a></li>
+                <li><a href="communication.html">Communication</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="manage-courses">
+            <h1>Manage Courses</h1>
+            <form id="upload-material-form">
+                <h2>Upload Course Materials</h2>
+                <label for="course-id">Course ID:</label>
+                <input type="text" id="course-id" name="course-id" required>
+                <label for="material">Select Material:</label>
+                <input type="file" id="material" name="material" accept=".pdf,.doc,.ppt" required>
+                <button type="submit">Upload Material</button>
+            </form>
+            <div id="track-submissions">
+                <h2>Track Submissions</h2>
+                <button id="view-submissions">View Submissions</button>
+                <button id="grade-assignments">Grade Assignments</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Department Learning Management System. All rights reserved.</p>
+    </footer>
+</body>
+</html>

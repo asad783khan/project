@@ -1,0 +1,104 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #e9ecef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Section Styles */
+#uploadSection {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    max-width: 450px;
+    width: 100%;
+}
+
+#uploadSection h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+/* Form Styles */
+#uploadForm {
+    display: flex;
+    flex-direction: column;
+}
+
+#uploadForm label {
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #555;
+}
+
+#uploadForm input[type="text"],
+#uploadForm input[type="file"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#uploadForm input[type="text"]:focus,
+#uploadForm input[type="file"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+#uploadForm button {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#uploadForm button:hover {
+    background-color: #0056b3;
+}
+.back-btn {
+    padding: 10px 15px;
+    background-color: #1681de;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.back-btn:hover {
+    background-color: #11b20c;
+}
+
+/* Responsive Styles */
+@media (max-width: 500px) {
+    #uploadSection {
+        padding: 20px;
+    }
+
+    #uploadSection h2 {
+        font-size: 20px;
+    }
+}

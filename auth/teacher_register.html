@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Registration</title>
+    <link rel="stylesheet" href="../css/teacher_register.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="navbar">
+            <a href="../index.html">Home</a>
+            <a href="logout.php">Logout</a>
+        </div>
+    </nav>
+    
+    <!-- Main Content -->
+    <main>
+        <div class="wrapper">
+            <div class="container">
+                <h1 class="form-title">Teacher Registration</h1>
+                <form id="register-form" action="process_teacher_register.php" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <label for="semester">Semester:</label>
+                    <select id="semester" name="semester" required>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                    </select>
+
+                    <button type="submit">Register</button><br>
+                    <button type="button" onclick="window.history.back();">Go Back</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 DLMS. All rights reserved.</p>
+    </footer>
+</body>
+</html>

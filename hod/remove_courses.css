@@ -1,0 +1,213 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+    position: relative;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    display: block;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    background-color: #575757;
+    border-radius: 4px;
+}
+
+nav ul li .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+nav ul li .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+nav ul li .dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+nav ul li:hover .dropdown-content {
+    display: block;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 0;
+        width: 100%;
+    }
+
+    nav ul li a {
+        padding: 10px;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li .dropdown-content {
+        position: static;
+        box-shadow: none;
+    }
+
+    nav ul li:hover .dropdown-content {
+        display: none;
+    }
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Filter and Course Sections */
+.filter-courses-section,
+.add-course-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.filter-courses-section label,
+.add-course-section label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.filter-courses-section select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.filter-courses-section button,
+#remove-courses-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #5cb85c;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.filter-courses-section button:hover,
+#remove-courses-form button:hover {
+    background-color: #4cae4c;
+}
+
+/* Table Styles */
+#course-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px; /* Add margin at the bottom to space from the button */
+}
+
+#course-table th,
+#course-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+#course-table th {
+    background-color: #f2f2f2;
+}
+
+#course-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#course-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Center Remove Selected Courses Button */
+#remove-courses-form {
+    text-align: center; /* Center align the button within the form */
+}
+
+#remove-courses-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #5cb85c;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block; /* Align button in line with text */
+}
+
+#remove-courses-form button:hover {
+    background-color: #4cae4c;
+}

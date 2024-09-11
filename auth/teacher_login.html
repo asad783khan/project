@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Login</title>
+    <link rel="stylesheet" href="../css/login-style2.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="navbar">
+            <a href="../index.html">Home</a>
+            <a href="../logout.php">Logout</a>
+        </div>
+    </nav>
+    
+    <!-- Main Content -->
+    <main>
+        <div class="wrapper">
+            <div class="container">
+                <h1 class="form-title">Teacher Login</h1>
+                <form action="process_teacher_login.php" method="POST">
+                    <label for="Email">Email:</label>
+                    <input type="email" name="Email" required>
+
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" required>
+
+                   
+
+                    <button type="submit" name="login">Login</button><br>
+                    <button type="button" onclick="window.history.back();">Go Back</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 DLMS. All rights reserved.</p>
+    </footer>
+</body>
+</html>

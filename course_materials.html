@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Materials | Students Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="students_portal.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="course_materials.html">Course Materials</a></li>
+                <li><a href="attendance.html">Attendance</a></li>
+                <li><a href="results.html">Results</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="communication.html">Communication</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="course-materials">
+            <h1>Course Materials</h1>
+            <div id="course-list">
+                <!-- Course materials will be dynamically added here -->
+            </div>
+            <form id="submit-assignment-form">
+                <h2>Submit Assignment</h2>
+                <label for="assignment-id">Assignment ID:</label>
+                <input type="text" id="assignment-id" name="assignment-id" required>
+                <label for="assignment-file">Select File:</label>
+                <input type="file" id="assignment-file" name="assignment-file" accept=".pdf,.doc,.ppt" required>
+                <button type="submit">Submit Assignment</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Department Learning Management System. All rights reserved.</p>
+    </footer>
+</body>
+</html>

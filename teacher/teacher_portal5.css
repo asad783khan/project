@@ -1,0 +1,260 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navbar Styles */
+/* Navbar Styles */
+header {
+    background-color: #333;
+    padding: 10px 0;
+    color: white;
+}
+
+.navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.dashboard-title {
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    flex-grow: 1; /* Allows the title to take up available space */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px; /* Changed to left margin for proper spacing */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #007BFF;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* Main Dashboard Styles */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.overview {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.stat {
+    background-color: #007BFF;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    flex: 1;
+    margin-right: 10px;
+    animation: slideInLeft 1s ease-in-out;
+}
+
+.stat:last-child {
+    margin-right: 0;
+    animation: slideInRight 1s ease-in-out;
+}
+
+@keyframes slideInLeft {
+    from { opacity: 0; transform: translateX(-20px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInRight {
+    from { opacity: 0; transform: translateX(20px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+.stat h2 {
+    margin-bottom: 10px;
+}
+
+.stat p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Gallery Section Styles */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.gallery-item {
+    position: relative;
+    width: calc(33.333% - 20px);
+    background-color: #007BFF;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    animation: scaleUp 0.5s ease-in-out;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-10px);
+}
+
+@keyframes scaleUp {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .overlay {
+    opacity: 1;
+}
+
+.semester-label {
+    font-size: 20px;
+    margin-bottom: 10px;
+    animation: fadeInUp 0.6s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.subject-dropdown {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+    background-color: white;
+    color: #333;
+    margin-bottom: 10px;
+    cursor: pointer;
+    animation: fadeInUp 0.8s ease-in-out;
+}
+
+.subject-dropdown:focus {
+    outline: none;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.options .btn {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.options .btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+.semester-label {
+    font-size: 22px;
+    color: white;           /* Set the text color to white */
+    text-align: center;      /* Center the text */
+    font-weight: bold;       /* Optional: make the text bold */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    font-size: 14px;
+    animation: fadeIn 1s ease-in-out;
+}

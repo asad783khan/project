@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.navbar {
+    width: 200px;
+    background-color: #333;
+    color: white;
+    height: 100vh;
+    padding-top: 20px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar ul li {
+    padding: 10px;
+    text-align: center;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.navbar ul li a:hover {
+    background-color: #575757;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.update {
+    display: none;
+}
